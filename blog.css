@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Reddit+Mono:wght@200..900&family=Tilt+Neon&display=swap');
+
+
+.background-img {
+    margin-top: -40px;
+    position: relative; /* Make the parent container relative */
+  }
+  
+  .background-img video {
+
+    
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute; /* Position the overlay relative to the parent container */
+    top: 40%; /* Place the overlay at the vertical center of the parent container */
+    left: 10px; /* Place the overlay 10px from the right edge of the parent container */
+    transform: translateY(-50%); /* Adjust the vertical position to center the text */
+    font-size: 23px;
+    text-align: justify;
+    padding: 20px; /* Add padding to the overlay */
+    color: white; /* Text color */
+    max-width: 70%; /* Limit the width of the overlay */
+    box-sizing: border-box; /* Include padding and border in the overlay's total width */
+  }
+  
+
+.blogs{
+    background-color: rgb(174, 23, 76);
+    padding-top: 20px;
+}
+  .blog-container{
+    display:  flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .menstrual-hygiene{
+    text-align: justify;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 40%;
+    height: 500px;
+    padding: 15px;
+    margin: 10px;
+    background-color: azure;
+    font-size: 18px;
+    overflow: scroll;
+    overflow: auto;
+  }
+
+  .digestion{
+    text-align: justify;
+    border: 2px solid  white;
+    border-radius: 5px;
+    width: 40%;
+    height: 500px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    
+    background-color: azure;
+    overflow: scroll;
+    overflow: auto;
+  }
+
+  .skin{
+    text-align: justify;
+    border: 2px solid  white;
+    border-radius: 5px;
+    width: 40%;
+    height: 500px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 18px;
+    
+    background-color: azure;
+    position: relative;
+    overflow: scroll;
+    overflow: auto;
+  }
+.heading{
+    margin-top: 5px;
+}
+
+
+.back-skin-img {
+    position: relative;
+    overflow-y: scroll;
+    overflow-y: auto;
+    height: 500px;
+
+    
+    
+    text-align: justify;
+    
+
+  }
+  .skin-head{
+    margin-bottom: 15px;
+  }
+  
+  .image-skin {
+    margin-bottom: -5px;
+    width: 100%;
+    height: 200%;
+    
+  }
+  /* #scroll{
+
+    border: 1px solid white;
+    width: 500px;
+
+  } */
+  
+  
+  .text-overlay-skin {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    color: white;
+    font-size: 20px;
+    overflow: scroll;
+    overflow: auto;
+    
+    padding: 20px; /* Adjust as needed */
+    /* background-color: rgba(255, 255, 255, 0.8); Add a semi-transparent white background to improve readability */
+  }
+
+.daily_cont{
+  display: flex;
+flex-direction: row;
+
+}
+
+.daily{
+  text-align: justify;
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  list-style-type: circle;
+  font-family: 'Lora', serif; 
+}
+
+
+.daily ol {
+  /* Apply styles to the ordered list */
+  list-style-type: decimal; /* Use decimal numbering for list items */
+  margin-left: 20px; /* Add left margin to the list for indentation */
+  padding-left: 20px; /* Add padding to the list for indentation */
+}
+
+.daily ol li {
+  /* Apply styles to the list items */
+  margin-bottom: 10px; /* Add bottom margin between list items */
+  font-size: 18px; /* Adjust font size of list items */
+  line-height: 1.5; /* Adjust line height of list items for readability */
+  /* color: rgb(225, 43, 7); */
+  color: rgb(255, 153, 0);
+  
+}
+
+
+.daily:hover {
+  transform: scale(0.9); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+
+#vid{
+  width: 40% ;
+  height:800px;  
+  padding : 10px; 
+  margin : 5px 10px
+}
+
+
+
+
+
+/* For screens smaller than 768px (tablets and mobile phones) */
+@media only screen and (max-width: 768px) {
+    
+  
+    
+  
+    .back-skin-img {
+      max-height: 300px; /* Adjust max height for smaller screens */
+    }
+  }
+  @media only screen and (max-width: 825px) {
+    #text-overlay-skin {
+       
+
+        font-size: 14px;
+        font-weight: bolder;
+    }
+  }
+  
+  /* For iPhone 12 viewport in portrait mode */
+  @media only screen and (max-width: 768px) {
+    .background-img img {
+      height: 500px; /* Default backgound image height for larger screens */
+    }
+  
+
+    .text-overlay {
+      max-width: 80%; /* Default text overlay width for larger screens */
+      font-size: 12px; /* Default font size for larger screens */
+    }
+
+    #text-overlay-skin {
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+        color: white;
+        font-size: 11px;
+        
+        padding: 20px;
+    }
+  }
+  
+  /* For screens larger than iPhone 12 viewport */
+  @media only screen and (max-width: 1035px) {
+    .background-img img {
+      height: 500px; /* Default background image height for larger screens */
+    }
+    .text-overlay {
+      max-width: 80%; /* Default text overlay width for larger screens */
+      font-size: 18px; /* Default font size for larger screens */
+    }
+    .blog-container{
+        
+        display:  grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+
+        .menstrual-hygiene{
+            width: 90%;
+        }
+        .digestion{
+            width: 90%;
+        }
+        .skin{
+            width: 90%;
+        }
+  
+    
+  
+    .back-skin-img {
+      max-height: 180px; /* Default max height for larger screens */
+    }
+    #text-overlay-skin {
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+        color: white;
+        font-size: 9px;
+    
+        
+        padding: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 458px) and (max-width: 700px) {
+    .background-img img {
+        height: 500px; /* Default backgound image height for larger screens */
+      }
+    
+      .text-overlay {
+        max-width: 80%; /* Default text overlay width for larger screens */
+        font-size: 11px; /* Default font size for larger screens */
+      }
+    
+      .back-skin-img {
+        max-height: 190px; /* Default max height for larger screens */
+      }
+      .daily_cont{
+        display: flex;
+      flex-direction: column;
+      
+      }
+      
+#vid{
+  width: 100% ;
+    
+  padding : 10px; 
+  margin : 5px 10px
+}
+
+  }
+  @media only screen and (max-width: 458px){
+    .background-img img {
+        height: 500px; /* Default backgound image height for larger screens */
+      }
+    
+      .blog-container{
+        
+        display:  grid;
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+        .menstrual-hygiene{
+            width: 80%;
+        }
+        .digestion{
+            width: 80%;
+        }
+        .skin{
+            width: 80%;
+        }
+      .text-overlay {
+
+        max-width: 80%; /* Default text overlay width for larger screens */
+        font-size: 7px; /* Default font size for larger screens */
+      }
+    
+      .back-skin-img {
+        max-height: 200px; /* Default max height for larger screens */
+      }
+    
+      .daily_cont{
+        display: flex;
+      flex-direction: column;
+      
+      }
+      .daily h1{
+  font-size: 20px;    
+
+      }
+        .daily ol{
+          font-size: 12;
+        }
+      
+#vid{
+  width: 100% ;
+  height:400px;  
+  padding : 10px; 
+  margin : 5px 10px
+}
+
+    
+  }
